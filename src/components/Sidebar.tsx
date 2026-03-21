@@ -2,16 +2,15 @@ import React from 'react';
 import { 
   LayoutDashboard, 
   FolderOpen, 
-  Layers, 
   MessageSquare, 
   BarChart3, 
   Settings, 
   LogOut,
-  Plus,
-  HelpCircle,
   FolderArchive,
   CreditCard,
-  User
+  User,
+  Bell,
+  Layers
 } from 'lucide-react';
 import { Page } from '../types';
 
@@ -23,23 +22,28 @@ interface SidebarProps {
 export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onPageChange }) => {
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'projects', label: 'Projects', icon: FolderOpen },
-    { id: 'services', label: 'Services', icon: Layers },
     { id: 'workspace', label: 'Messages', icon: MessageSquare },
+    { id: 'projects', label: 'Projects', icon: FolderOpen },
     { id: 'files', label: 'Files', icon: FolderArchive },
+    { id: 'services', label: 'Order Services', icon: Layers },
     { id: 'billing', label: 'Billing', icon: CreditCard },
     { id: 'profile', label: 'Profile', icon: User },
+    { id: 'notifications', label: 'Notifications', icon: Bell },
     { id: 'settings', label: 'Settings', icon: Settings },
   ];
 
   return (
-    <aside className="h-screen w-64 fixed left-0 top-0 flex flex-col bg-surface-container-low shadow-[20px_0_40px_rgba(0,0,0,0.2)] z-50 py-6">
-      <div className="px-6 mb-10">
-        <h1 className="text-2xl font-black text-white tracking-tighter font-headline">Obsidian</h1>
-        <p className="text-[11px] uppercase tracking-widest text-slate-500 font-semibold mt-1">Digital Agency</p>
+    <aside className="h-screen w-64 fixed left-0 top-0 flex flex-col bg-[#0B0F19] border-r border-white/5 z-50">
+      <div className="p-8 mb-4">
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+            <span className="text-white font-black text-xl">X</span>
+          </div>
+          <h1 className="text-lg font-bold text-white tracking-tight">Xenon Studios</h1>
+        </div>
       </div>
 
-      <nav className="flex-1 space-y-1">
+      <nav className="flex-1 px-4 space-y-1 overflow-y-auto no-scrollbar">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = currentPage === item.id || (item.id === 'settings' && currentPage.startsWith('settings-'));
@@ -47,45 +51,27 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onPageChange }) =
             <button
               key={item.id}
               onClick={() => onPageChange(item.id as Page)}
-              className={`w-full flex items-center gap-3 px-6 py-3 transition-all duration-300 group ${
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group ${
                 isActive 
-                  ? 'bg-primary-container/10 text-primary-container border-r-2 border-primary-container' 
+                  ? 'bg-indigo-600/10 text-indigo-400' 
                   : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
               }`}
             >
-              <Icon size={18} className={isActive ? 'text-primary-container' : 'text-slate-400 group-hover:text-slate-200'} />
+              <Icon size={20} className={isActive ? 'text-indigo-400' : 'text-slate-400 group-hover:text-slate-200'} />
               <span className="text-sm font-medium">{item.label}</span>
+              {item.id === 'notifications' && (
+                <span className="ml-auto bg-indigo-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">12</span>
+              )}
             </button>
           );
         })}
       </nav>
 
-      <div className="px-4 mt-auto space-y-4">
-        <button className="w-full bg-primary-container text-on-primary-fixed py-3 rounded-xl font-bold text-sm shadow-lg shadow-primary-container/20 active:scale-[0.98] transition-transform">
-          New Project
+      <div className="p-4 mt-auto border-t border-white/5">
+        <button className="w-full flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-red-400 transition-colors group">
+          <LogOut size={20} className="group-hover:text-red-400" />
+          <span className="text-sm font-medium">Logout</span>
         </button>
-        
-        <div className="flex flex-col gap-1">
-          <button className="flex items-center gap-3 px-4 py-2 text-slate-400 hover:text-slate-200 transition-colors">
-            <HelpCircle size={18} />
-            <span className="text-[11px] uppercase tracking-wider font-semibold">Support</span>
-          </button>
-          
-          <button 
-            onClick={() => onPageChange('profile')}
-            className="flex items-center gap-3 px-4 py-2 text-slate-400 hover:text-slate-200 transition-colors"
-          >
-            <div className="w-6 h-6 rounded-full bg-surface-container-highest overflow-hidden">
-              <img 
-                src="https://i.pravatar.cc/150?u=alex" 
-                alt="Profile" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <span className="text-[11px] uppercase tracking-wider font-semibold">Profile</span>
-          </button>
-        </div>
       </div>
     </aside>
   );

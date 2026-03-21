@@ -3,11 +3,13 @@ import React from 'react';
 export type Page = 
   | 'dashboard' 
   | 'projects' 
+  | 'project-details'
   | 'workspace' 
   | 'files' 
   | 'billing' 
   | 'services' 
   | 'profile' 
+  | 'notifications'
   | 'settings'
   | 'settings-account'
   | 'settings-notifications'

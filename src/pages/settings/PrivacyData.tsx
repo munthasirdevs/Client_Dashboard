@@ -23,13 +23,13 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
       <div className="flex flex-col gap-4">
         <button 
           onClick={() => onNavigate('settings')}
-          className="flex items-center gap-2 text-slate-400 hover:text-indigo-400 transition-colors text-sm font-medium group"
+          className="flex items-center gap-2 text-[#c7c4d7] hover:text-[#6366F1] transition-colors text-sm font-medium group w-fit"
         >
           <ChevronLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
           Back to Settings
         </button>
-        <h1 className="text-4xl font-bold tracking-tight text-white font-display">Privacy & Data</h1>
-        <p className="text-slate-400 max-w-2xl">
+        <h1 className="text-3xl font-bold tracking-tight text-white font-display">Privacy & Data</h1>
+        <p className="text-[#c7c4d7] max-w-2xl">
           Control your digital footprint, manage data portability, and configure communication preferences across the platform.
         </p>
       </div>
@@ -37,8 +37,8 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Communication */}
         <div className="lg:col-span-2 space-y-8">
-          <div className="glass-card p-8 space-y-8">
-            <div className="flex items-center gap-3 text-indigo-400">
+          <div className="bg-[#111827] border border-white/5 rounded-2xl p-8 space-y-8">
+            <div className="flex items-center gap-3 text-[#6366F1]">
               <Mail size={24} />
               <h3 className="text-xl font-semibold text-white">Communication</h3>
             </div>
@@ -46,17 +46,17 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
             <div className="space-y-8">
               <div className="flex items-center justify-between group">
                 <div className="space-y-1">
-                  <p className="text-sm font-semibold text-white group-hover:text-indigo-400 transition-colors">Email Marketing</p>
+                  <p className="text-sm font-semibold text-white group-hover:text-[#6366F1] transition-colors">Email Marketing</p>
                   <p className="text-xs text-slate-500">Receive updates about new features and ecosystem news.</p>
                 </div>
-                <div className="w-12 h-6 bg-indigo-600 rounded-full relative cursor-pointer">
+                <div className="w-12 h-6 bg-[#6366F1] rounded-full relative cursor-pointer">
                   <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow-sm" />
                 </div>
               </div>
 
               <div className="flex items-center justify-between group">
                 <div className="space-y-1">
-                  <p className="text-sm font-semibold text-white group-hover:text-indigo-400 transition-colors">Product Surveys</p>
+                  <p className="text-sm font-semibold text-white group-hover:text-[#6366F1] transition-colors">Product Surveys</p>
                   <p className="text-xs text-slate-500">Invites to help us shape the future of AgencyOS.</p>
                 </div>
                 <div className="w-12 h-6 bg-slate-700 rounded-full relative cursor-pointer">
@@ -66,15 +66,15 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          <div className="glass-card p-8 space-y-6">
-            <div className="flex items-center gap-3 text-indigo-400">
+          <div className="bg-[#111827] border border-white/5 rounded-2xl p-8 space-y-6">
+            <div className="flex items-center gap-3 text-[#6366F1]">
               <Shield size={24} />
               <h3 className="text-xl font-semibold text-white">GDPR & Regulatory Compliance</h3>
             </div>
-            <p className="text-sm text-slate-400 leading-relaxed">
+            <p className="text-sm text-[#c7c4d7] leading-relaxed">
               AgencyOS is fully compliant with the General Data Protection Regulation (GDPR). Your data is encrypted at rest and in transit. You have the right to access, rectify, or erase your personal data at any time. We do not sell your data to third parties.
             </p>
-            <button className="text-xs font-bold text-indigo-400 hover:text-indigo-300 uppercase tracking-widest flex items-center gap-2">
+            <button className="text-xs font-bold text-[#6366F1] hover:text-[#6366F1]/80 uppercase tracking-widest flex items-center gap-2">
               Read Privacy Policy <ChevronRight size={14} />
             </button>
           </div>
@@ -82,40 +82,40 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
 
         {/* Data Management & Danger Zone */}
         <div className="space-y-8">
-          <div className="glass-card p-8 space-y-6">
-            <div className="flex items-center gap-3 text-indigo-400">
+          <div className="bg-[#111827] border border-white/5 rounded-2xl p-8 space-y-6">
+            <div className="flex items-center gap-3 text-[#6366F1]">
               <Download size={24} />
               <h3 className="text-xl font-semibold text-white">Data Management</h3>
             </div>
             <p className="text-xs text-slate-500">Download a copy of your account activity, project history, and billing records for your personal archives.</p>
             
             <div className="space-y-4">
-              <button className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-900/50 border border-slate-700/30 hover:border-indigo-500/50 transition-all group">
+              <button className="w-full flex items-center justify-between p-4 rounded-xl bg-[#0B0F19] border border-white/5 hover:border-[#6366F1]/50 transition-all group">
                 <div className="flex items-center gap-3">
-                  <FileText size={20} className="text-slate-400 group-hover:text-indigo-400" />
+                  <FileText size={20} className="text-slate-400 group-hover:text-[#6366F1]" />
                   <div className="text-left">
                     <p className="text-sm font-medium text-white">Export as PDF</p>
                     <p className="text-[10px] text-slate-500 uppercase tracking-wider">Optimized for reading</p>
                   </div>
                 </div>
-                <Download size={16} className="text-slate-600 group-hover:text-indigo-400" />
+                <Download size={16} className="text-slate-600 group-hover:text-[#6366F1]" />
               </button>
 
-              <button className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-900/50 border border-slate-700/30 hover:border-indigo-500/50 transition-all group">
+              <button className="w-full flex items-center justify-between p-4 rounded-xl bg-[#0B0F19] border border-white/5 hover:border-[#6366F1]/50 transition-all group">
                 <div className="flex items-center gap-3">
-                  <div className="text-slate-400 group-hover:text-indigo-400 font-mono text-lg">{"{ }"}</div>
+                  <div className="text-slate-400 group-hover:text-[#6366F1] font-mono text-lg">{"{ }"}</div>
                   <div className="text-left">
                     <p className="text-sm font-medium text-white">Export as JSON</p>
                     <p className="text-[10px] text-slate-500 uppercase tracking-wider">Optimized for developers</p>
                   </div>
                 </div>
-                <Download size={16} className="text-slate-600 group-hover:text-indigo-400" />
+                <Download size={16} className="text-slate-600 group-hover:text-[#6366F1]" />
               </button>
             </div>
             <p className="text-[10px] text-slate-600 text-center uppercase tracking-widest font-bold">Last Export: 14 days ago</p>
           </div>
 
-          <div className="glass-card p-8 space-y-6 border-red-500/10">
+          <div className="bg-[#111827] border border-red-500/10 rounded-2xl p-8 space-y-6">
             <div className="flex items-center gap-3 text-red-400">
               <Trash2 size={24} />
               <h3 className="text-xl font-semibold text-white">Danger Zone</h3>
@@ -131,8 +131,8 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
 
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="glass-card p-6 flex items-center gap-4">
-          <div className="p-3 rounded-xl bg-slate-800/50 text-indigo-400">
+        <div className="bg-[#111827] border border-white/5 rounded-2xl p-6 flex items-center gap-4">
+          <div className="p-3 rounded-xl bg-[#1F2937] text-[#6366F1]">
             <Eye size={20} />
           </div>
           <div>
@@ -140,8 +140,8 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
             <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Currently active sessions</p>
           </div>
         </div>
-        <div className="glass-card p-6 flex items-center gap-4">
-          <div className="p-3 rounded-xl bg-slate-800/50 text-indigo-400">
+        <div className="bg-[#111827] border border-white/5 rounded-2xl p-6 flex items-center gap-4">
+          <div className="p-3 rounded-xl bg-[#1F2937] text-[#6366F1]">
             <Shield size={20} />
           </div>
           <div>
@@ -149,8 +149,8 @@ const PrivacyData: React.FC<PrivacyDataProps> = ({ onNavigate }) => {
             <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Authenticator app active</p>
           </div>
         </div>
-        <div className="glass-card p-6 flex items-center gap-4">
-          <div className="p-3 rounded-xl bg-slate-800/50 text-indigo-400">
+        <div className="bg-[#111827] border border-white/5 rounded-2xl p-6 flex items-center gap-4">
+          <div className="p-3 rounded-xl bg-[#1F2937] text-[#6366F1]">
             <Lock size={20} />
           </div>
           <div>
