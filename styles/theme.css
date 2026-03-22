@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&family=Space+Grotesk:wght@300..700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* ============================================
+   TYPOGRAPHY & FONTS
+   Utility classes for different font families
+   ============================================ */
+.ubuntu {
+  font-family: "Ubuntu", sans-serif !important;
+  font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.space-font {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.syne {
+  font-family: "Syne", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Tailwind v3 compatibility layer for CDN usage if needed, or custom variables */
+:root {
+  --color-surface: #0b0f19;
+  --color-surface-container: #111827;
+  --color-surface-container-high: #1f2937;
+  --color-on-surface: #dfe2f1;
+  --color-on-surface-variant: #c7c4d7;
+  --color-primary: #6366f1;
+  --color-primary-container: #6366f1;
+  --color-on-primary-fixed: #07006c;
+  --color-outline-variant: #464554;
+  --color-tertiary: #ffb783;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-headline {
+  font-family: 'Syne', sans-serif !important;
+}
+
+.glass-card {
+  background-color: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
