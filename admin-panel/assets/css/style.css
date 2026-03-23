@@ -35,12 +35,12 @@
   --color-surface-container-low: #1c1f2a;
   --color-surface-container-high: #1f2937;
   --color-surface-container-highest: #313540;
-  
+
   /* Text & Content Colors */
   --color-on-surface: #dfe2f1;
   --color-on-surface-variant: #c7c4d7;
   --color-on-surface-muted: #64748b;
-  
+
   /* Brand & Status Colors */
   --color-primary: #6366f1;
   --color-primary-container: #6366f1;
@@ -50,10 +50,10 @@
   --color-tertiary-light: #FED7AA;
   --color-error: #ef4444;
   --color-success: #10b981;
-  
+
   /* Extra Surface */
   --color-surface-dim: #0f131d;
-  
+
   /* Utility Colors */
   --color-outline-variant: #464554;
 }
@@ -78,6 +78,7 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -90,9 +91,11 @@ body {
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #313540;
   border-radius: 10px;
@@ -110,8 +113,14 @@ body {
   background: linear-gradient(135deg, rgba(192, 193, 255, 0.05) 0%, rgba(28, 31, 42, 0) 100%);
 }
 
-.hide-scrollbar::-webkit-scrollbar { display: none; }
-.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 .glass-effect {
   backdrop-filter: blur(20px);

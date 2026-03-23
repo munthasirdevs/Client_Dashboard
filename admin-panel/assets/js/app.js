@@ -17,7 +17,7 @@ function highlightActiveLink() {
             if (currentPath.endsWith(cleanHref) || currentPath.includes('/' + cleanHref)) {
                 link.classList.add('bg-[var(--color-surface-container-low)]', 'text-[var(--color-primary)]', 'translate-x-1');
                 link.classList.remove('text-slate-400');
-                
+
                 // Add indicator to the dot
                 const dot = link.querySelector('span');
                 if (dot) dot.classList.add('bg-[var(--color-primary)]');
@@ -30,7 +30,7 @@ function setupGlobalInteractions() {
     // Handle mobile sidebar toggle
     const menuBtn = document.getElementById('mobile-menu-btn');
     const sidebar = document.querySelector('aside');
-    
+
     if (menuBtn && sidebar) {
         menuBtn.addEventListener('click', (e) => {
             e.stopPropagation();
