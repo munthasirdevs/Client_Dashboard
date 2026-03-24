@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="../styles/responsive.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body class="bg-[#0B0F19] text-on-surface font-sans antialiased overflow-x-hidden min-h-screen">
-    
+
     <!-- Background Elements -->
     <div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
         <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#6366F1]/5 rounded-full blur-[120px]"></div>
@@ -18,59 +20,79 @@
     </div>
 
     <!-- Sidebar -->
-    <aside id="app-sidebar" class="h-screen w-64 fixed left-0 top-0 flex flex-col bg-[#0B0F19] border-r border-white/5 z-[60] -translate-x-full md:translate-x-0 transition-transform duration-300">
+    <aside id="app-sidebar"
+        class="h-screen w-64 fixed left-0 top-0 flex flex-col bg-[#0B0F19] border-r border-white/5 z-[60] -translate-x-full md:translate-x-0 transition-transform duration-300">
         <div class="p-8 mb-4">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-[#6366F1] rounded-lg flex items-center justify-center shadow-lg shadow-[#6366F1]/20">
+                <div
+                    class="w-8 h-8 bg-[#6366F1] rounded-lg flex items-center justify-center shadow-lg shadow-[#6366F1]/20">
                     <span class="text-white font-black text-xl space-font">X</span>
                 </div>
                 <h1 class="text-lg font-bold text-white tracking-tight font-headline">Xenon Studios</h1>
             </div>
-            <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-400 hover:text-white rounded-lg absolute right-4 top-8"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <button onclick="toggleMobileMenu()"
+                class="md:hidden p-2 text-slate-400 hover:text-white rounded-lg absolute right-4 top-8"><i
+                    data-lucide="x" class="w-5 h-5"></i></button>
         </div>
 
         <nav class="flex-1 px-4 space-y-1 overflow-y-auto no-scrollbar">
-            <a href="dashboard.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
-                <i data-lucide="layout-dashboard" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
+            <a href="dashboard.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+                <i data-lucide="layout-dashboard"
+                    class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Dashboard</span>
             </a>
-            <a href="messages.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
-                <i data-lucide="message-square" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
+            <a href="messages.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+                <i data-lucide="message-square"
+                    class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Messages</span>
             </a>
-            <a href="projects.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
-                <i data-lucide="folder-open" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
+            <a href="projects.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+                <i data-lucide="folder-open"
+                    class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Projects</span>
             </a>
-            <a href="files.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
-                <i data-lucide="folder-archive" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
+            <a href="files.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+                <i data-lucide="folder-archive"
+                    class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Files</span>
             </a>
-            <a href="services.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+            <a href="services.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
                 <i data-lucide="layers" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Order Services</span>
             </a>
-            <a href="billing.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
-                <i data-lucide="credit-card" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
+            <a href="billing.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+                <i data-lucide="credit-card"
+                    class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Billing</span>
             </a>
-            <a href="profile.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+            <a href="profile.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
                 <i data-lucide="user" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Profile</span>
             </a>
-            <a href="notifications.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
+            <a href="notifications.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group text-slate-400 hover:text-slate-200 hover:bg-white/5">
                 <i data-lucide="bell" class="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Notifications</span>
-                <span class="ml-auto bg-[#6366F1] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full ubuntu space-font">12</span>
+                <span
+                    class="ml-auto bg-[#6366F1] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full ubuntu space-font">12</span>
             </a>
-            <a href="settings-hub.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group bg-[#6366F1]/10 text-[#6366F1]">
+            <a href="settings-hub.html"
+                class="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group bg-[#6366F1]/10 text-[#6366F1]">
                 <i data-lucide="settings" class="w-5 h-5 text-[#6366F1]"></i>
                 <span class="text-sm font-medium outfit">Settings</span>
             </a>
         </nav>
 
         <div class="p-4 mt-auto border-t border-white/5">
-            <button onclick="handleDemoLogout()" class="w-full flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-red-400 transition-colors group">
+            <button onclick="handleDemoLogout()"
+                class="w-full flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-red-400 transition-colors group">
                 <i data-lucide="log-out" class="w-5 h-5 group-hover:text-red-400 transition-colors"></i>
                 <span class="text-sm font-medium outfit">Logout</span>
             </button>
@@ -79,18 +101,22 @@
 
     <main class="ml-0 md:ml-64 min-h-screen flex flex-col pt-20">
         <!-- TopNav -->
-        <header class="fixed top-0 right-0 w-full md:w-[calc(100%-16rem)] h-20 z-40 bg-[#111827]/80 backdrop-blur-xl flex items-center justify-between px-10 border-b border-white/5">
+        <header
+            class="fixed top-0 right-0 w-full md:w-[calc(100%-16rem)] h-20 z-40 bg-[#111827]/80 backdrop-blur-xl flex items-center justify-between px-10 border-b border-white/5">
             <div class="flex items-center gap-4 lg:gap-10 min-w-fit">
-                <button onclick="toggleMobileMenu()" class="p-2 md:hidden text-slate-400 hover:text-white rounded-xl hover:bg-white/5 transition-all">
+                <button onclick="toggleMobileMenu()"
+                    class="p-2 md:hidden text-slate-400 hover:text-white rounded-xl hover:bg-white/5 transition-all">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
                 <h2 class="text-xl font-bold text-white tracking-tight font-headline">Settings Hub</h2>
-                
+
                 <nav class="hidden xl:flex items-center gap-8">
-                    <button onclick="window.location.href='settings-hub.html'" class="px-5 py-2 bg-[#1F2937] text-[#dfe2f1] text-[10px] font-bold uppercase tracking-[0.2em] rounded-xl hover:text-white hover:bg-[#2d3a4d] transition-all border border-white/5 shadow-xl ubuntu">
+                    <button onclick="window.location.href='settings-hub.html'"
+                        class="px-5 py-2 bg-[#1F2937] text-[#dfe2f1] text-[10px] font-bold uppercase tracking-[0.2em] rounded-xl hover:text-white hover:bg-[#2d3a4d] transition-all border border-white/5 shadow-xl ubuntu">
                         Settings
                     </button>
-                    <button onclick="supportAction()" class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] hover:text-white transition-all ubuntu">
+                    <button onclick="supportAction()"
+                        class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] hover:text-white transition-all ubuntu">
                         Support
                     </button>
                 </nav>
@@ -98,18 +124,23 @@
 
             <div class="flex-1 flex justify-center px-16 hidden lg:flex">
                 <div class="relative w-full max-w-2xl group">
-                    <i data-lucide="search" class="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-[#6366F1] transition-colors w-[18px] h-[18px]"></i>
-                    <input type="text" placeholder="Search workspace..." class="w-full bg-[#1F2937]/50 border border-white/5 rounded-[1.25rem] py-3 pl-14 pr-6 text-sm text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-[#6366F1]/40 focus:bg-[#1F2937] transition-all shadow-inner outfit">
+                    <i data-lucide="search"
+                        class="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-[#6366F1] transition-colors w-[18px] h-[18px]"></i>
+                    <input type="text" placeholder="Search workspace..."
+                        class="w-full bg-[#1F2937]/50 border border-white/5 rounded-[1.25rem] py-3 pl-14 pr-6 text-sm text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-[#6366F1]/40 focus:bg-[#1F2937] transition-all shadow-inner outfit">
                 </div>
             </div>
 
             <div class="flex items-center gap-8 min-w-fit">
                 <div class="flex items-center gap-2">
-                    <button onclick="window.location.href='notifications.html'" class="p-2.5 text-slate-400 hover:text-white hover:bg-white/5 rounded-xl transition-all relative group">
+                    <button onclick="window.location.href='notifications.html'"
+                        class="p-2.5 text-slate-400 hover:text-white hover:bg-white/5 rounded-xl transition-all relative group">
                         <i data-lucide="bell" class="w-[22px] h-[22px]"></i>
-                        <span class="absolute top-2.5 right-2.5 w-2 h-2 bg-[#6366F1] rounded-full border-2 border-[#111827] group-hover:scale-125 transition-transform"></span>
+                        <span
+                            class="absolute top-2.5 right-2.5 w-2 h-2 bg-[#6366F1] rounded-full border-2 border-[#111827] group-hover:scale-125 transition-transform"></span>
                     </button>
-                    <button onclick="supportAction()" class="p-2.5 text-slate-400 hover:text-white hover:bg-white/5 rounded-xl transition-all hidden sm:block">
+                    <button onclick="supportAction()"
+                        class="p-2.5 text-slate-400 hover:text-white hover:bg-white/5 rounded-xl transition-all hidden sm:block">
                         <i data-lucide="help-circle" class="w-[22px] h-[22px]"></i>
                     </button>
                 </div>
@@ -118,11 +149,16 @@
 
                 <button onclick="window.location.href='profile.html'" class="flex items-center gap-4 group">
                     <div class="flex items-center gap-3 hidden lg:flex">
-                        <p class="text-sm font-bold text-white group-hover:text-[#6366F1] transition-colors tracking-tight outfit">Alex Rivera</p>
-                        <i data-lucide="chevron-down" class="text-slate-600 group-hover:text-white transition-colors w-4 h-4"></i>
+                        <p
+                            class="text-sm font-bold text-white group-hover:text-[#6366F1] transition-colors tracking-tight outfit">
+                            Alex Rivera</p>
+                        <i data-lucide="chevron-down"
+                            class="text-slate-600 group-hover:text-white transition-colors w-4 h-4"></i>
                     </div>
-                    <div class="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-[#6366F1] to-transparent border border-white/5 shadow-2xl group-hover:scale-105 transition-transform shrink-0">
-                        <img src="https://i.pravatar.cc/150?u=alex" alt="Alex Rivera" class="w-full h-full rounded-full object-cover border-2 border-[#111827]">
+                    <div
+                        class="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-[#6366F1] to-transparent border border-white/5 shadow-2xl group-hover:scale-105 transition-transform shrink-0">
+                        <img src="https://i.pravatar.cc/150?u=alex" alt="Alex Rivera"
+                            class="w-full h-full rounded-full object-cover border-2 border-[#111827]">
                     </div>
                 </button>
             </div>
@@ -131,20 +167,23 @@
         <!-- Dynamic Content Area -->
         <div class="px-10 pb-12 pt-8 flex-1">
             <div class="max-w-6xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-                
+
                 <div class="flex flex-col gap-4">
-                    <a href="settings-hub.html" class="flex items-center gap-2 text-slate-400 hover:text-[#6366F1] transition-colors text-sm font-bold uppercase tracking-widest group w-fit ubuntu">
-                        <i data-lucide="chevron-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
+                    <a href="settings-hub.html"
+                        class="flex items-center gap-2 text-slate-400 hover:text-[#6366F1] transition-colors text-sm font-bold uppercase tracking-widest group w-fit ubuntu">
+                        <i data-lucide="chevron-left"
+                            class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
                         Back to Settings
                     </a>
                     <h1 class="text-4xl font-bold tracking-tight text-white font-headline">Notification Preferences</h1>
                     <p class="text-slate-400 text-sm max-w-2xl outfit leading-relaxed">
-                        Customize how and when you receive updates across your workspace. All changes are saved automatically.
+                        Customize how and when you receive updates across your workspace. All changes are saved
+                        automatically.
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    
+
                     <!-- Global Activities -->
                     <div class="bg-[#111827]/50 border border-white/5 rounded-3xl p-8 shadow-xl">
                         <div class="flex items-center gap-3 text-[#6366F1] mb-8">
@@ -154,35 +193,56 @@
 
                         <div class="space-y-6">
                             <!-- Switch 1: Active -->
-                            <div class="flex items-center justify-between group cursor-pointer hover:bg-white/[0.02] p-4 -mx-4 rounded-2xl transition-all">
+                            <div
+                                class="flex items-center justify-between group cursor-pointer hover:bg-white/[0.02] p-4 -mx-4 rounded-2xl transition-all">
                                 <div class="space-y-1">
-                                    <p class="text-sm font-bold text-white group-hover:text-[#6366F1] transition-colors font-headline tracking-wide">Project Updates</p>
-                                    <p class="text-xs text-slate-500 outfit">Receive alerts for new milestones and tasks.</p>
+                                    <p
+                                        class="text-sm font-bold text-white group-hover:text-[#6366F1] transition-colors font-headline tracking-wide">
+                                        Project Updates</p>
+                                    <p class="text-xs text-slate-500 outfit">Receive alerts for new milestones and
+                                        tasks.</p>
                                 </div>
-                                <div class="w-12 h-6 rounded-full relative cursor-pointer transition-colors bg-[#6366F1] border border-[#6366F1]">
-                                    <div class="absolute top-[2px] right-1 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]"></div>
+                                <div
+                                    class="w-12 h-6 rounded-full relative cursor-pointer transition-colors bg-[#6366F1] border border-[#6366F1]">
+                                    <div
+                                        class="absolute top-[2px] right-1 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]">
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Switch 2: Active -->
-                            <div class="flex items-center justify-between group cursor-pointer hover:bg-white/[0.02] p-4 -mx-4 rounded-2xl transition-all">
+                            <div
+                                class="flex items-center justify-between group cursor-pointer hover:bg-white/[0.02] p-4 -mx-4 rounded-2xl transition-all">
                                 <div class="space-y-1">
-                                    <p class="text-sm font-bold text-white group-hover:text-[#6366F1] transition-colors font-headline tracking-wide">File Uploads</p>
-                                    <p class="text-xs text-slate-500 outfit">Notify when a client uploads new assets.</p>
+                                    <p
+                                        class="text-sm font-bold text-white group-hover:text-[#6366F1] transition-colors font-headline tracking-wide">
+                                        File Uploads</p>
+                                    <p class="text-xs text-slate-500 outfit">Notify when a client uploads new assets.
+                                    </p>
                                 </div>
-                                <div class="w-12 h-6 rounded-full relative cursor-pointer transition-colors bg-[#6366F1] border border-[#6366F1]">
-                                    <div class="absolute top-[2px] right-1 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]"></div>
+                                <div
+                                    class="w-12 h-6 rounded-full relative cursor-pointer transition-colors bg-[#6366F1] border border-[#6366F1]">
+                                    <div
+                                        class="absolute top-[2px] right-1 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]">
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Switch 3: Inactive -->
-                            <div class="flex items-center justify-between group cursor-pointer hover:bg-white/[0.02] p-4 -mx-4 rounded-2xl transition-all opacity-70 hover:opacity-100">
+                            <div
+                                class="flex items-center justify-between group cursor-pointer hover:bg-white/[0.02] p-4 -mx-4 rounded-2xl transition-all opacity-70 hover:opacity-100">
                                 <div class="space-y-1">
-                                    <p class="text-sm font-bold text-white transition-colors font-headline tracking-wide">Billing Alerts</p>
-                                    <p class="text-xs text-slate-500 outfit">Status of invoices and payment confirmations.</p>
+                                    <p
+                                        class="text-sm font-bold text-white transition-colors font-headline tracking-wide">
+                                        Billing Alerts</p>
+                                    <p class="text-xs text-slate-500 outfit">Status of invoices and payment
+                                        confirmations.</p>
                                 </div>
-                                <div class="w-12 h-6 rounded-full relative cursor-pointer transition-colors bg-[#1F2937] border border-white/5 shadow-inner">
-                                    <div class="absolute top-[2px] left-1 w-4 h-4 bg-white/50 rounded-full shadow-sm transition-all"></div>
+                                <div
+                                    class="w-12 h-6 rounded-full relative cursor-pointer transition-colors bg-[#1F2937] border border-white/5 shadow-inner">
+                                    <div
+                                        class="absolute top-[2px] left-1 w-4 h-4 bg-white/50 rounded-full shadow-sm transition-all">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -196,48 +256,73 @@
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            
+
                             <!-- Channel 1: Active -->
-                            <div class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19] border border-[#6366F1]/20 hover:border-[#6366F1]/50 transition-all cursor-pointer shadow-[0_0_15px_rgba(99,102,241,0.05)]">
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19] border border-[#6366F1]/20 hover:border-[#6366F1]/50 transition-all cursor-pointer shadow-[0_0_15px_rgba(99,102,241,0.05)]">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-2 h-2 rounded-full bg-[#6366F1] shadow-[0_0_8px_rgba(99,102,241,0.5)]"></div>
-                                    <span class="text-sm font-bold text-[#c7c4d7] space-font tracking-wide">#general</span>
+                                    <div
+                                        class="w-2 h-2 rounded-full bg-[#6366F1] shadow-[0_0_8px_rgba(99,102,241,0.5)]">
+                                    </div>
+                                    <span
+                                        class="text-sm font-bold text-[#c7c4d7] space-font tracking-wide">#general</span>
                                 </div>
-                                <div class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#6366F1]">
-                                    <div class="absolute top-0.5 right-0.5 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]"></div>
+                                <div
+                                    class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#6366F1]">
+                                    <div
+                                        class="absolute top-0.5 right-0.5 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]">
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Channel 2: Active -->
-                            <div class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19] border border-[#6366F1]/20 hover:border-[#6366F1]/50 transition-all cursor-pointer shadow-[0_0_15px_rgba(99,102,241,0.05)]">
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19] border border-[#6366F1]/20 hover:border-[#6366F1]/50 transition-all cursor-pointer shadow-[0_0_15px_rgba(99,102,241,0.05)]">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-2 h-2 rounded-full bg-[#6366F1] shadow-[0_0_8px_rgba(99,102,241,0.5)]"></div>
-                                    <span class="text-sm font-bold text-[#c7c4d7] space-font tracking-wide">#design</span>
+                                    <div
+                                        class="w-2 h-2 rounded-full bg-[#6366F1] shadow-[0_0_8px_rgba(99,102,241,0.5)]">
+                                    </div>
+                                    <span
+                                        class="text-sm font-bold text-[#c7c4d7] space-font tracking-wide">#design</span>
                                 </div>
-                                <div class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#6366F1]">
-                                    <div class="absolute top-0.5 right-0.5 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]"></div>
+                                <div
+                                    class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#6366F1]">
+                                    <div
+                                        class="absolute top-0.5 right-0.5 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]">
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Channel 3: Inactive -->
-                            <div class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19]/50 border border-white/5 hover:border-slate-500/30 transition-all cursor-pointer opacity-70">
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19]/50 border border-white/5 hover:border-slate-500/30 transition-all cursor-pointer opacity-70">
                                 <div class="flex items-center gap-3">
                                     <div class="w-2 h-2 rounded-full bg-slate-600"></div>
-                                    <span class="text-sm font-bold text-slate-500 space-font tracking-wide">#feedback</span>
+                                    <span
+                                        class="text-sm font-bold text-slate-500 space-font tracking-wide">#feedback</span>
                                 </div>
-                                <div class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#1F2937] shadow-inner">
-                                    <div class="absolute top-0.5 left-0.5 w-4 h-4 bg-white/50 rounded-full shadow-sm transition-all"></div>
+                                <div
+                                    class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#1F2937] shadow-inner">
+                                    <div
+                                        class="absolute top-0.5 left-0.5 w-4 h-4 bg-white/50 rounded-full shadow-sm transition-all">
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Channel 4: Active -->
-                            <div class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19] border border-[#6366F1]/20 hover:border-[#6366F1]/50 transition-all cursor-pointer shadow-[0_0_15px_rgba(99,102,241,0.05)]">
+                            <div
+                                class="flex items-center justify-between p-4 rounded-2xl bg-[#0B0F19] border border-[#6366F1]/20 hover:border-[#6366F1]/50 transition-all cursor-pointer shadow-[0_0_15px_rgba(99,102,241,0.05)]">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-2 h-2 rounded-full bg-[#6366F1] shadow-[0_0_8px_rgba(99,102,241,0.5)]"></div>
+                                    <div
+                                        class="w-2 h-2 rounded-full bg-[#6366F1] shadow-[0_0_8px_rgba(99,102,241,0.5)]">
+                                    </div>
                                     <span class="text-sm font-bold text-[#c7c4d7] space-font tracking-wide">#dev</span>
                                 </div>
-                                <div class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#6366F1]">
-                                    <div class="absolute top-0.5 right-0.5 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]"></div>
+                                <div
+                                    class="w-11 h-5 rounded-full relative cursor-pointer transition-colors bg-[#6366F1]">
+                                    <div
+                                        class="absolute top-0.5 right-0.5 w-4 h-4 bg-white rounded-full shadow-sm transition-all shadow-[0_0_5px_rgba(0,0,0,0.3)]">
+                                    </div>
                                 </div>
                             </div>
 
@@ -246,9 +331,12 @@
                 </div>
 
                 <!-- Quiet Hours -->
-                <div class="bg-[#111827]/50 border border-white/5 rounded-3xl p-8 md:p-10 shadow-xl overflow-hidden relative group hover:border-[#6366F1]/30 transition-all duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.02] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                    
+                <div
+                    class="bg-[#111827]/50 border border-white/5 rounded-3xl p-8 md:p-10 shadow-xl overflow-hidden relative group hover:border-[#6366F1]/30 transition-all duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.02] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000">
+                    </div>
+
                     <div class="flex items-center gap-3 text-[#6366F1] mb-8 relative z-10">
                         <i data-lucide="moon" class="w-6 h-6"></i>
                         <h3 class="text-xl font-bold text-white font-headline">Quiet Hours / DND</h3>
@@ -257,27 +345,36 @@
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative z-10">
                         <div class="lg:col-span-1 space-y-2">
                             <p class="text-sm text-[#c7c4d7] outfit leading-relaxed font-medium">
-                                Mute all push notifications during your focus time. System alerts will still be archived in your activity feed for later review.
+                                Mute all push notifications during your focus time. System alerts will still be archived
+                                in your activity feed for later review.
                             </p>
                         </div>
 
                         <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="space-y-2">
-                                <label class="text-[10px] uppercase tracking-widest text-slate-500 font-bold ml-1 ubuntu">Start Time</label>
-                                <div class="flex items-center gap-4 p-5 rounded-2xl bg-[#0B0F19] border border-white/5 shadow-inner">
+                                <label
+                                    class="text-[10px] uppercase tracking-widest text-slate-500 font-bold ml-1 ubuntu">Start
+                                    Time</label>
+                                <div
+                                    class="flex items-center gap-4 p-5 rounded-2xl bg-[#0B0F19] border border-white/5 shadow-inner">
                                     <div class="p-2.5 rounded-xl bg-[#1F2937] text-[#6366F1] shadow-xl">
                                         <i data-lucide="clock" class="w-5 h-5"></i>
                                     </div>
-                                    <span class="text-xl font-bold font-headline tracking-wide text-white">10:00 PM</span>
+                                    <span class="text-xl font-bold font-headline tracking-wide text-white">10:00
+                                        PM</span>
                                 </div>
                             </div>
                             <div class="space-y-2">
-                                <label class="text-[10px] uppercase tracking-widest text-slate-500 font-bold ml-1 ubuntu">End Time</label>
-                                <div class="flex items-center gap-4 p-5 rounded-2xl bg-[#0B0F19] border border-white/5 shadow-inner">
+                                <label
+                                    class="text-[10px] uppercase tracking-widest text-slate-500 font-bold ml-1 ubuntu">End
+                                    Time</label>
+                                <div
+                                    class="flex items-center gap-4 p-5 rounded-2xl bg-[#0B0F19] border border-white/5 shadow-inner">
                                     <div class="p-2.5 rounded-xl bg-[#1F2937] text-amber-500 shadow-xl">
                                         <i data-lucide="sun" class="w-5 h-5"></i>
                                     </div>
-                                    <span class="text-xl font-bold font-headline tracking-wide text-white">08:00 AM</span>
+                                    <span class="text-xl font-bold font-headline tracking-wide text-white">08:00
+                                        AM</span>
                                 </div>
                             </div>
                         </div>
@@ -285,10 +382,12 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row items-center justify-end gap-4 pt-8">
-                    <button class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-slate-500 hover:text-white font-bold text-[10px] uppercase tracking-widest transition-colors ubuntu order-2 sm:order-1">
+                    <button
+                        class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-slate-500 hover:text-white font-bold text-[10px] uppercase tracking-widest transition-colors ubuntu order-2 sm:order-1">
                         Discard Changes
                     </button>
-                    <button class="w-full sm:w-auto bg-[#6366F1] hover:bg-[#5355e1] text-white px-10 py-3.5 rounded-xl font-bold text-[10px] uppercase tracking-widest transition-all shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] active:scale-95 ubuntu order-1 sm:order-2">
+                    <button
+                        class="w-full sm:w-auto bg-[#6366F1] hover:bg-[#5355e1] text-white px-10 py-3.5 rounded-xl font-bold text-[10px] uppercase tracking-widest transition-all shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] active:scale-95 ubuntu order-1 sm:order-2">
                         Save Preferences
                     </button>
                 </div>
@@ -296,7 +395,8 @@
             </div>
         </div>
 
-        <footer class="px-10 py-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold ubuntu bg-[#0B0F19]/80 backdrop-blur-md">
+        <footer
+            class="px-10 py-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold ubuntu bg-[#0B0F19]/80 backdrop-blur-md">
             <div class="flex items-center gap-4">
                 <span class="flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.4)]"></span>
@@ -313,4 +413,5 @@
 
     <script src="../js/shared.js"></script>
 </body>
+
 </html>
