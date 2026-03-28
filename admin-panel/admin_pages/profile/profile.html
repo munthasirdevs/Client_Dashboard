@@ -25,295 +25,109 @@
   XenonOS Shared Component: Sidebar (v5.0 - New Typography System)
   Reference: Obsidian / Outfit & Syne
 -->
-<aside
-    class="h-screen w-72 fixed left-0 top-0 border-r border-[var(--color-outline-variant)]/15 bg-[var(--color-surface)] flex flex-col pt-8 pb-4 z-50 overflow-y-auto no-scrollbar shadow-2xl outfit lg:translate-x-0 -translate-x-full transition-transform duration-300 ease-in-out">
+<!-- 
+  XenonOS Shared Component: Modern Interactive Sidebar (v5.0)
+  Collapsible, Hover-to-Expand, and Pinned States
+-->
+<aside class="modern-sidebar outfit lg:translate-x-0 -translate-x-full transition-all duration-300 ease-in-out">
     <!-- Branding -->
-    <div class="px-8 mb-8 flex items-center gap-3">
-        <div
-            class="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[#3f4077] flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.3)]">
+    <div class="px-5 mb-8 mt-8 flex items-center gap-4 overflow-hidden">
+        <div class="min-w-[40px] h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[#3f4077] flex items-center justify-center shadow-lg">
             <span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">diamond</span>
         </div>
-        <div>
-            <h1 class="text-xl font-bold text-[var(--color-on-surface)] font-headline tracking-tight syne">Obsidian
-            </h1>
+        <div class="nav-label">
+            <h1 class="text-xl font-bold text-[var(--color-on-surface)] font-headline tracking-tight syne">Obsidian</h1>
             <p class="text-[10px] text-slate-500 font-label uppercase tracking-[0.2em] outfit">Management Hub</p>
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="flex-1 px-4 space-y-6">
-
+    <nav class="flex-1 space-y-1">
         <!-- 1. Dashboard -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">dashboard</span> Dashboard
-            </div>
-            <a href="../dashboard/dashboard.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Main Dashboard
-            </a>
-        </div>
+        <a href="../dashboard/dashboard.html" class="nav-item group" data-tooltip="Dashboard">
+            <span class="material-symbols-outlined">dashboard</span>
+            <span class="nav-label text-sm">Dashboard</span>
+        </a>
 
         <!-- 2. Clients -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">group</span> Clients
-            </div>
-            <a href="../clients/clients-list.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Clients List
-            </a>
-            <a href="../clients/client-details.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Client Details
-            </a>
-        </div>
+        <a href="../clients/clients-list.html" class="nav-item group" data-tooltip="Clients">
+            <span class="material-symbols-outlined">group</span>
+            <span class="nav-label text-sm">Clients</span>
+        </a>
 
         <!-- 3. Projects -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">folder_open</span> Projects
-            </div>
-            <a href="../projects/all-projects.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                All Projects
-            </a>
-            <a href="../projects/project-details.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Project Details
-            </a>
-            <a href="../projects/assigned-projects.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Assigned Projects
-            </a>
-        </div>
+        <a href="../projects/all-projects.html" class="nav-item group" data-tooltip="Projects">
+            <span class="material-symbols-outlined">folder_open</span>
+            <span class="nav-label text-sm">Projects</span>
+        </a>
 
         <!-- 4. Tasks -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">assignment</span> Tasks
-            </div>
-            <a href="../tasks/task-list.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Task List
-            </a>
-            <a href="../tasks/task-management.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Task Management
-            </a>
-            <a href="../tasks/assign-task.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Assign Task
-            </a>
-        </div>
+        <a href="../tasks/task-list.html" class="nav-item group" data-tooltip="Tasks">
+            <span class="material-symbols-outlined">assignment</span>
+            <span class="nav-label text-sm">Tasks</span>
+        </a>
 
-        <!-- 5. Chat / Communication -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">forum</span> Chat
-            </div>
-            <a href="../chat/communication.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Communication
-            </a>
-            <a href="../chat/chat-control.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Chat Control
-            </a>
-        </div>
+        <!-- 5. Communication -->
+        <a href="../chat/communication.html" class="nav-item group" data-tooltip="Communication">
+            <span class="material-symbols-outlined">forum</span>
+            <span class="nav-label text-sm">Communication</span>
+        </a>
 
         <!-- 6. Files -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">folder_shared</span> Files
-            </div>
-            <a href="../files/file-manager.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                File Manager
-            </a>
-            <a href="../files/file-details.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                File Details
-            </a>
-        </div>
+        <a href="../files/file-manager.html" class="nav-item group" data-tooltip="Files">
+            <span class="material-symbols-outlined">folder_shared</span>
+            <span class="nav-label text-sm">Files</span>
+        </a>
 
-        <!-- 7. Payment Management -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">payments</span> Payments
-            </div>
-            <a href="../payment/payment.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Payment Page
-            </a>
-        </div>
+        <!-- 7. Payment -->
+        <a href="../payment/payment.html" class="nav-item group" data-tooltip="Payment">
+            <span class="material-symbols-outlined">payments</span>
+            <span class="nav-label text-sm">Payment</span>
+        </a>
 
-        <!-- 8. Profile -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">account_circle</span> Profile
-            </div>
-            <a href="../profile/profile.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Profile Page
-            </a>
-        </div>
+        <!-- 8. Team -->
+        <a href="../team/team-members.html" class="nav-item group" data-tooltip="Team">
+            <span class="material-symbols-outlined">badge</span>
+            <span class="nav-label text-sm">Team Members</span>
+        </a>
 
-        <!-- 9. Team -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">badge</span> Team
-            </div>
-            <a href="../team/team-members.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Team Members
-            </a>
-            <a href="../team/team-member-assign.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Team Member Assign
-            </a>
-        </div>
+        <!-- 9. Analytics -->
+        <a href="../Overview Analytics/executive.html" class="nav-item group" data-tooltip="Analytics">
+            <span class="material-symbols-outlined">analytics</span>
+            <span class="nav-label text-sm">Analytics</span>
+        </a>
 
-        <!-- 10. Roles -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">policy</span> Roles
-            </div>
-            <a href="../roles/roles-permissions.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Roles & Permissions
-            </a>
-            <a href="../roles/add-new-role.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Add New Role
-            </a>
-        </div>
+        <!-- 10. Reports -->
+        <a href="../Performance Reports/financial.html" class="nav-item group" data-tooltip="Reports">
+            <span class="material-symbols-outlined">trending_up</span>
+            <span class="nav-label text-sm">Reports</span>
+        </a>
 
-        <!-- 11. Notifications -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">notifications</span> Notifications
-            </div>
-            <a href="../notifications/notification-center.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Notification Center
-            </a>
-            <a href="../notifications/notification-details.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Notification Details
-            </a>
-        </div>
+        <!-- 11. Activity -->
+        <a href="../activity/activity-logs.html" class="nav-item group" data-tooltip="Activity">
+            <span class="material-symbols-outlined">history</span>
+            <span class="nav-label text-sm">Activity Logs</span>
+        </a>
+
+        <!-- Divider -->
+        <div class="mx-6 my-4 border-t border-[var(--color-outline-variant)]/10"></div>
 
         <!-- 12. Settings -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">settings</span> Settings
-            </div>
-            <a href="../settings/settings.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Unified Settings Page
-            </a>
-        </div>
-
-        <!-- 13. Activity -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">history</span> Activity
-            </div>
-            <a href="../activity/activity-logs.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Activity Logs
-            </a>
-        </div>
-
-        <!-- 14. Overview Analytics -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">analytics</span> Analytics
-            </div>
-            <a href="../Overview Analytics/executive.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Executive
-            </a>
-            <a href="../Overview Analytics/marketing.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Marketing
-            </a>
-            <a href="../Overview Analytics/operations.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Operations
-            </a>
-        </div>
-
-        <!-- 15. Performance Reports -->
-        <div class="space-y-1">
-            <div
-                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">trending_up</span> Reports
-            </div>
-            <a href="../Performance Reports/financial.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Financial
-            </a>
-            <a href="../Performance Reports/sales.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Sales
-            </a>
-            <a href="../Performance Reports/support.html"
-                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
-                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Support
-            </a>
-        </div>
-
+        <a href="../settings/settings.html" class="nav-item group" data-tooltip="Settings">
+            <span class="material-symbols-outlined">settings</span>
+            <span class="nav-label text-sm">Settings</span>
+        </a>
     </nav>
+
+    <!-- Pin Toggle Button -->
+    <div id="pin-sidebar" class="pin-toggle mx-4 mb-4 flex items-center justify-center shadow-lg" title="Pin Sidebar">
+        <span class="material-symbols-outlined text-sm">push_pin</span>
+    </div>
 </aside>
 
 
     <!-- Main Content -->
-    <main class="flex-1 ml-72 min-h-screen flex flex-col">
+    <main class="flex-1 min-h-screen flex flex-col">
         <!-- Header Placeholder -->
         <!-- 
   XenonOS Shared Component: Header (v5.0 - New Typography System)
@@ -666,5 +480,6 @@
     <script src="../../assets/js/app.js"></script>
 </body>
 </html>
+
 
 

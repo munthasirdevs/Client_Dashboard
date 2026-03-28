@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&family=Space+Grotesk:wght@300..700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('./sidebar.css');
 
 /* ============================================
    TYPOGRAPHY & FONTS
@@ -125,4 +126,15 @@ body {
 .glass-effect {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+}
+
+/* Sidebar Content Adjustment */
+@media (min-width: 1025px) {
+  main {
+    margin-left: 68px;
+    transition: margin-left 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  main.pinned {
+    margin-left: 260px;
+  }
 }
