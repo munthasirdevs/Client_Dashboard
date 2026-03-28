@@ -21,27 +21,36 @@
   XenonOS Shared Component: Sidebar (v5.0 - New Typography System)
   Reference: Obsidian / Outfit & Syne
 -->
-<aside class="h-screen w-72 fixed left-0 top-0 border-r border-[var(--color-outline-variant)]/15 bg-[var(--color-surface)] flex flex-col pt-8 pb-4 z-50 overflow-y-auto no-scrollbar shadow-2xl outfit lg:translate-x-0 -translate-x-full transition-transform duration-300 ease-in-out">
+<!-- 
+  XenonOS Shared Component: Sidebar (v5.0 - New Typography System)
+  Reference: Obsidian / Outfit & Syne
+-->
+<aside
+    class="h-screen w-72 fixed left-0 top-0 border-r border-[var(--color-outline-variant)]/15 bg-[var(--color-surface)] flex flex-col pt-8 pb-4 z-50 overflow-y-auto no-scrollbar shadow-2xl outfit lg:translate-x-0 -translate-x-full transition-transform duration-300 ease-in-out">
     <!-- Branding -->
     <div class="px-8 mb-8 flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[#3f4077] flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.3)]">
+        <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[#3f4077] flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.3)]">
             <span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">diamond</span>
         </div>
         <div>
-            <h1 class="text-xl font-bold text-[var(--color-on-surface)] font-headline tracking-tight syne">Obsidian</h1>
+            <h1 class="text-xl font-bold text-[var(--color-on-surface)] font-headline tracking-tight syne">Obsidian
+            </h1>
             <p class="text-[10px] text-slate-500 font-label uppercase tracking-[0.2em] outfit">Management Hub</p>
         </div>
     </div>
 
     <!-- Navigation -->
     <nav class="flex-1 px-4 space-y-6">
-        
+
         <!-- 1. Dashboard -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">dashboard</span> Dashboard
             </div>
-            <a href="../dashboard/dashboard.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../dashboard/dashboard.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Main Dashboard
             </a>
@@ -49,14 +58,17 @@
 
         <!-- 2. Clients -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">group</span> Clients
             </div>
-            <a href="../clients/clients-list.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../clients/clients-list.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Clients List
             </a>
-            <a href="../clients/client-details.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../clients/client-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Client Details
             </a>
@@ -64,18 +76,22 @@
 
         <!-- 3. Projects -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">folder_open</span> Projects
             </div>
-            <a href="../projects/all-projects.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../projects/all-projects.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 All Projects
             </a>
-            <a href="../projects/project-details.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../projects/project-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Project Details
             </a>
-            <a href="../projects/assigned-projects.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../projects/assigned-projects.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Assigned Projects
             </a>
@@ -83,18 +99,22 @@
 
         <!-- 4. Tasks -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">assignment</span> Tasks
             </div>
-            <a href="../tasks/task-list.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../tasks/task-list.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Task List
             </a>
-            <a href="../tasks/task-management.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../tasks/task-management.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Task Management
             </a>
-            <a href="../tasks/assign-task.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../tasks/assign-task.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Assign Task
             </a>
@@ -102,14 +122,17 @@
 
         <!-- 5. Chat / Communication -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">forum</span> Chat
             </div>
-            <a href="../chat/communication.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../chat/communication.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Communication
             </a>
-            <a href="../chat/chat-control.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../chat/chat-control.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Chat Control
             </a>
@@ -117,36 +140,43 @@
 
         <!-- 6. Files -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">folder_shared</span> Files
             </div>
-            <a href="../files/file-manager.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../files/file-manager.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 File Manager
             </a>
-            <a href="../files/file-details.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../files/file-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 File Details
             </a>
         </div>
 
-        <!-- 7. Billing -->
+        <!-- 7. Payment Management -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
-                <span class="material-symbols-outlined mr-2 text-sm">payments</span> Billing
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">payments</span> Payments
             </div>
-            <a href="../billing/billing.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../payment/payment.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
-                Billing Page
+                Payment Page
             </a>
         </div>
 
         <!-- 8. Profile -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">account_circle</span> Profile
             </div>
-            <a href="../profile/profile.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../profile/profile.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Profile Page
             </a>
@@ -154,14 +184,17 @@
 
         <!-- 9. Team -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">badge</span> Team
             </div>
-            <a href="../team/team-members.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../team/team-members.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Team Members
             </a>
-            <a href="../team/team-member-assign.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../team/team-member-assign.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Team Member Assign
             </a>
@@ -169,14 +202,17 @@
 
         <!-- 10. Roles -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">policy</span> Roles
             </div>
-            <a href="../roles/roles-permissions.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../roles/roles-permissions.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Roles & Permissions
             </a>
-            <a href="../roles/add-new-role.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../roles/add-new-role.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Add New Role
             </a>
@@ -184,14 +220,17 @@
 
         <!-- 11. Notifications -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">notifications</span> Notifications
             </div>
-            <a href="../notifications/notification-center.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../notifications/notification-center.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Notification Center
             </a>
-            <a href="../notifications/notification-details.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../notifications/notification-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Notification Details
             </a>
@@ -199,10 +238,12 @@
 
         <!-- 12. Settings -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">settings</span> Settings
             </div>
-            <a href="../settings/settings.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../settings/settings.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Unified Settings Page
             </a>
@@ -210,10 +251,12 @@
 
         <!-- 13. Activity -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">history</span> Activity
             </div>
-            <a href="../activity/activity-logs.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../activity/activity-logs.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Activity Logs
             </a>
@@ -221,18 +264,22 @@
 
         <!-- 14. Overview Analytics -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">analytics</span> Analytics
             </div>
-            <a href="../Overview Analytics/executive.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../Overview Analytics/executive.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Executive
             </a>
-            <a href="../Overview Analytics/marketing.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../Overview Analytics/marketing.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Marketing
             </a>
-            <a href="../Overview Analytics/operations.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../Overview Analytics/operations.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Operations
             </a>
@@ -240,18 +287,22 @@
 
         <!-- 15. Performance Reports -->
         <div class="space-y-1">
-            <div class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
                 <span class="material-symbols-outlined mr-2 text-sm">trending_up</span> Reports
             </div>
-            <a href="../Performance Reports/financial.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../Performance Reports/financial.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Financial
             </a>
-            <a href="../Performance Reports/sales.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../Performance Reports/sales.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Sales
             </a>
-            <a href="../Performance Reports/support.html" class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+            <a href="../Performance Reports/support.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
                 <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
                 Support
             </a>
@@ -465,72 +516,294 @@
 </div>
 </div>
 <!-- Right Preview Panel -->
-<aside class="w-80 bg-surface-container-high rounded-2xl flex flex-col shadow-2xl overflow-hidden border border-outline-variant/5">
-<div class="p-6">
-<div class="flex items-center justify-between mb-6">
-<span class="label-sm text-[10px] font-bold tracking-widest text-primary uppercase">File Preview</span>
-<button class="text-on-surface-variant hover:text-on-surface">
-<span class="material-symbols-outlined">close</span>
-</button>
-</div>
-<!-- File Thumbnail -->
-<div class="aspect-video w-full rounded-xl bg-surface-container-highest overflow-hidden mb-6 relative group">
-<img class="w-full h-full object-cover" data-alt="Project Architectural Drawing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuL-rUO2aRQBL_YBs7T_BEKZ5yJxhlC_XI7KmL-nfsbXT23x2sayPuH3RJrJautENe1yNxAcCp5kGgX4i7jNNAbIL4xi4ziWNblcu4E8LQhxnwO6piv8RH3EozTsdIs15z8UTbbkLRhl5w5TR9G0CJrqyws168xqKxfN1AYc87G-0VSIIBswApZbJBDgao6UM6RaqmACaK9RL55av-JmCM4-e7mcJaAjlTXJ3vN4sOyxSPgLl9YRDfc9adaHDEIw-m-c1DOugrD7k"/>
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined text-white text-3xl">fullscreen</span>
-</div>
-</div>
-<div class="space-y-6">
-<div>
-<h2 class="font-manrope text-lg font-semibold text-on-surface leading-tight">Architectural_V2_Final.pdf</h2>
-<p class="text-xs text-on-surface-variant/60 mt-1">Uploaded by Sarah Jenkins</p>
-</div>
-<!-- Stats Grid -->
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-surface-container-low p-3 rounded-xl border-l-2 border-primary-container">
-<div class="text-[9px] uppercase font-bold text-on-surface-variant/50 tracking-wider">Size</div>
-<div class="text-sm font-semibold text-on-surface">14.2 MB</div>
-</div>
-<div class="bg-surface-container-low p-3 rounded-xl border-l-2 border-primary-container">
-<div class="text-[9px] uppercase font-bold text-on-surface-variant/50 tracking-wider">Type</div>
-<div class="text-sm font-semibold text-on-surface">PDF Doc</div>
-</div>
-</div>
-<div class="space-y-4">
-<div class="flex justify-between items-center text-sm">
-<span class="text-on-surface-variant/60">Created</span>
-<span class="text-on-surface font-medium">Oct 12, 2023</span>
-</div>
-<div class="flex justify-between items-center text-sm">
-<span class="text-on-surface-variant/60">Project</span>
-<span class="text-primary font-medium">Obsidian HQ</span>
-</div>
-<div class="flex justify-between items-center text-sm">
-<span class="text-on-surface-variant/60">Owner</span>
-<div class="flex items-center gap-2">
-<img class="w-5 h-5 rounded-full object-cover" data-alt="Owner Avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZnP0SmPVUjCpdL-t-J4XVFvV84OyNyEvFwT58qgjn3b17x-qITB-iPAhb_cfmh8augr_WhJYp7Ql5wkwDKnTgbLCt9R6qOFakZpD2VABo8ZLA8vcyhJC0-WUAN6uBP2r_3etS5IRZTfDBjbLcM1UINdZwCVep-AZMQg9L3nKup12K4YBkIM-B4Q-E-U7DoCByLUUYpZchGUu-0LWKgdra9ooANlqCnC03q97bYlGk8gvyP04ikFmIpFvISBYLUz9QH6aEhXA8SqA"/>
-<span class="text-on-surface font-medium">Sarah J.</span>
-</div>
-</div>
-</div>
-<div class="h-[1px] bg-outline-variant/10"></div>
-<!-- Action Buttons -->
-<div class="grid grid-cols-2 gap-3">
-<button class="flex items-center justify-center gap-2 bg-surface-container text-on-surface py-3 rounded-xl text-xs font-semibold hover:bg-surface-bright transition-colors">
-<span class="material-symbols-outlined text-sm">download</span> Download
-                            </button>
-<button class="flex items-center justify-center gap-2 bg-surface-container text-on-surface py-3 rounded-xl text-xs font-semibold hover:bg-surface-bright transition-colors">
-<span class="material-symbols-outlined text-sm">share</span> Share
-                            </button>
-<button class="flex items-center justify-center gap-2 bg-surface-container text-on-surface py-3 rounded-xl text-xs font-semibold hover:bg-surface-bright transition-colors">
-<span class="material-symbols-outlined text-sm">edit</span> Rename
-                            </button>
-<button class="flex items-center justify-center gap-2 bg-error/10 text-error py-3 rounded-xl text-xs font-semibold hover:bg-error/20 transition-colors">
-<span class="material-symbols-outlined text-sm">delete</span> Delete
-                            </button>
-</div>
-</div>
-</div>
+<!-- 
+  XenonOS Shared Component: Sidebar (v5.0 - New Typography System)
+  Reference: Obsidian / Outfit & Syne
+-->
+<aside
+    class="h-screen w-72 fixed left-0 top-0 border-r border-[var(--color-outline-variant)]/15 bg-[var(--color-surface)] flex flex-col pt-8 pb-4 z-50 overflow-y-auto no-scrollbar shadow-2xl outfit lg:translate-x-0 -translate-x-full transition-transform duration-300 ease-in-out">
+    <!-- Branding -->
+    <div class="px-8 mb-8 flex items-center gap-3">
+        <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[#3f4077] flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.3)]">
+            <span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">diamond</span>
+        </div>
+        <div>
+            <h1 class="text-xl font-bold text-[var(--color-on-surface)] font-headline tracking-tight syne">Obsidian
+            </h1>
+            <p class="text-[10px] text-slate-500 font-label uppercase tracking-[0.2em] outfit">Management Hub</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex-1 px-4 space-y-6">
+
+        <!-- 1. Dashboard -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">dashboard</span> Dashboard
+            </div>
+            <a href="../dashboard/dashboard.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Main Dashboard
+            </a>
+        </div>
+
+        <!-- 2. Clients -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">group</span> Clients
+            </div>
+            <a href="../clients/clients-list.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Clients List
+            </a>
+            <a href="../clients/client-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Client Details
+            </a>
+        </div>
+
+        <!-- 3. Projects -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">folder_open</span> Projects
+            </div>
+            <a href="../projects/all-projects.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                All Projects
+            </a>
+            <a href="../projects/project-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Project Details
+            </a>
+            <a href="../projects/assigned-projects.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Assigned Projects
+            </a>
+        </div>
+
+        <!-- 4. Tasks -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">assignment</span> Tasks
+            </div>
+            <a href="../tasks/task-list.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Task List
+            </a>
+            <a href="../tasks/task-management.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Task Management
+            </a>
+            <a href="../tasks/assign-task.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Assign Task
+            </a>
+        </div>
+
+        <!-- 5. Chat / Communication -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">forum</span> Chat
+            </div>
+            <a href="../chat/communication.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Communication
+            </a>
+            <a href="../chat/chat-control.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Chat Control
+            </a>
+        </div>
+
+        <!-- 6. Files -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">folder_shared</span> Files
+            </div>
+            <a href="../files/file-manager.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                File Manager
+            </a>
+            <a href="../files/file-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                File Details
+            </a>
+        </div>
+
+        <!-- 7. Payment Management -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">payments</span> Payments
+            </div>
+            <a href="../payment/payment.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Payment Page
+            </a>
+        </div>
+
+        <!-- 8. Profile -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">account_circle</span> Profile
+            </div>
+            <a href="../profile/profile.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Profile Page
+            </a>
+        </div>
+
+        <!-- 9. Team -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">badge</span> Team
+            </div>
+            <a href="../team/team-members.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Team Members
+            </a>
+            <a href="../team/team-member-assign.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Team Member Assign
+            </a>
+        </div>
+
+        <!-- 10. Roles -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">policy</span> Roles
+            </div>
+            <a href="../roles/roles-permissions.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Roles & Permissions
+            </a>
+            <a href="../roles/add-new-role.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Add New Role
+            </a>
+        </div>
+
+        <!-- 11. Notifications -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">notifications</span> Notifications
+            </div>
+            <a href="../notifications/notification-center.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Notification Center
+            </a>
+            <a href="../notifications/notification-details.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Notification Details
+            </a>
+        </div>
+
+        <!-- 12. Settings -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">settings</span> Settings
+            </div>
+            <a href="../settings/settings.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Unified Settings Page
+            </a>
+        </div>
+
+        <!-- 13. Activity -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">history</span> Activity
+            </div>
+            <a href="../activity/activity-logs.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Activity Logs
+            </a>
+        </div>
+
+        <!-- 14. Overview Analytics -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">analytics</span> Analytics
+            </div>
+            <a href="../Overview Analytics/executive.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Executive
+            </a>
+            <a href="../Overview Analytics/marketing.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Marketing
+            </a>
+            <a href="../Overview Analytics/operations.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Operations
+            </a>
+        </div>
+
+        <!-- 15. Performance Reports -->
+        <div class="space-y-1">
+            <div
+                class="flex items-center px-4 py-2 text-[10px] text-slate-600 font-bold uppercase tracking-widest outfit">
+                <span class="material-symbols-outlined mr-2 text-sm">trending_up</span> Reports
+            </div>
+            <a href="../Performance Reports/financial.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Financial
+            </a>
+            <a href="../Performance Reports/sales.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Sales
+            </a>
+            <a href="../Performance Reports/support.html"
+                class="flex items-center px-8 py-2.5 text-slate-400 hover:text-[#6366f1] hover:bg-[#111827] rounded-xl transition-all text-sm group">
+                <span class="w-1 h-1 bg-slate-600 group-hover:bg-[#6366f1] rounded-full mr-3"></span>
+                Support
+            </a>
+        </div>
+
+    </nav>
 </aside>
 </div>
         <!-- Footer Placeholder -->
@@ -550,3 +823,5 @@
     <script src="../../assets/js/app.js"></script>
 </body>
 </html>
+
+
