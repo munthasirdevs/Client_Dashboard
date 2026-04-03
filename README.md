@@ -1,6 +1,6 @@
 # Xenon OS - Premium Client Dashboard
 
-Welcome to **Xenon OS**, a state-of-the-art Client Dashboard system designed for high-performance management and seamless user experience. This full-stack front-end solution provides a robust environment for managing projects, assets, messages, and administrative tasks.
+Welcome to **Xenon OS**, a state-of-the-art Client Dashboard system designed for high-performance management and seamless user experience. This modern front-end solution provides a robust environment for managing projects, assets, messages, and administrative tasks.
 
 ---
 
@@ -42,18 +42,21 @@ The central hub for all activities. It provides an at-a-glance view of:
 
 ### **Technology Stack**
 - **Structure**: Semantic HTML5 for modern web standards.
-- **Styling**: Vanilla CSS3 with a focus on:
-  - Custom CSS Variables (Design Tokens)
-  - Flexbox and Grid layouts
-  - Responsive design (Mobile-first approach)
-  - Keyframe animations for interactivity
-- **Logic**: Vanilla JavaScript for dynamic interactions and state management.
+- **Styling**: **Tailwind CSS** (via CDN) with custom configuration:
+  - Custom design tokens (`primary`, `accent`, `bg`)
+  - Utility-first responsive classes
+  - Glassmorphism effects (`backdrop-blur`, `bg-white/5`)
+  - Gradient backgrounds and text (`bg-gradient-to-r`)
+  - Smooth transitions and hover states
+  - CSS keyframe animations (configured in Tailwind config)
+- **Logic**: Vanilla JavaScript for dynamic interactions and shared utilities.
 
 ### **Design System**
-- **Theme**: Dark Mode optimized with high-contrast elements.
-- **Effects**: Glassmorphism (back-drop filters), subtle shadows, and smooth gradients.
-- **Typography**: Modern, readable fonts (e.g., Inter, Roboto).
+- **Theme**: Dark mode with deep navy background (`#0b0e14`) and vibrant blue accents.
+- **Effects**: Glassmorphism (backdrop blur, translucent backgrounds), subtle shadows, and animated gradient backgrounds.
+- **Typography**: Inter font family for clean, modern readability.
 - **Icons**: Scalable vector icons for sharp visuals on all screens.
+- **Animations**: Fade-in entry animations, hover lift effects, and shimmer transitions on buttons.
 
 ---
 
@@ -61,7 +64,7 @@ The central hub for all activities. It provides an at-a-glance view of:
 
 ```text
 /
-├── index.html                  # Landing Page & Entry Point
+├── index.html                  # Landing Page & Entry Point (Tailwind CSS)
 ├── README.md                   # Full System Documentation
 ├── js/                         # Scripting Layer
 │   └── shared.js               # Core utilities & shared logic
@@ -91,10 +94,10 @@ The central hub for all activities. It provides an at-a-glance view of:
 
 ## 🚀 Getting Started
 
-1. **Deployment**: Upload the root directory to your web server (Apache, Nginx, or GitHub Pages).
-2. **First Run**: Navigate to `index.html`.
-3. **Exploration**: Use the "Go to Dashboard" button to explore the system.
-4. **Customization**: Update the CSS colors in `/styles/theme.css` to match your brand.
+1. **Deployment**: Upload the root directory to your web server (Apache, Nginx, or GitHub Pages). No build step required.
+2. **First Run**: Navigate to `index.html` in your browser.
+3. **Exploration**: Click the "Explore Dashboard" button to access the main dashboard.
+4. **Customization**: Modify the Tailwind config in `index.html` `<script>` block to adjust colors, fonts, and animations.
 
 ---
 
